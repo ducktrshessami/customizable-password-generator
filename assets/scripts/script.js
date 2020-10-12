@@ -1,11 +1,15 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var charsetLowercase = "abcdefghijklmnopqrstuvwxyz";
+var charsetUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var charsetNumbers = "0123456789";
+var charsetSpecial = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"; // I really don't like spaces in passwords though
 var lenMin = 8, lenMax = 128, lenDefault = 8;
 var lastUsed;
 
 // Random integer in range; min/max are inclusive
 function randIntInRange(min, max) {
-
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Write password to the #password input
@@ -27,7 +31,7 @@ function getPasswordCriteria() {
     criteria.passLength = Math.min(Math.max(parseInt(prompt("Length of password?")) || lenDefault, lenMin), lenMax);
     criteria.lowercase = confirm("Include lowercase characters?");
     criteria.uppercase = confirm("Include uppercase characters?");
-    criteria.numeric = confirm("Include numeric characters?");
+    criteria.numeric = confirm("Include numbers?");
     criteria.special = confirm("Include special characters?");
     lastUsed = criteria;
   }
