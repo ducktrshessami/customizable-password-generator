@@ -6,7 +6,7 @@
 
 html,
 body,
-.wrapper {
+main {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   background-color: #f9fbfd;
 }
 
-.wrapper {
+main {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
