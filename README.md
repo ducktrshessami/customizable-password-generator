@@ -17,4 +17,4 @@ Password length and character set used in generation can be customized.
 
 </details>
 
-Deployment: [password-generator](https://ducktrshessami.github.io/password-generator)
+Deployment: [Password Generator](https://ducktrshessami.github.io/customizable-password-generator)
