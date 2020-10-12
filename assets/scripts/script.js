@@ -4,6 +4,7 @@ var charsetLowercase = "abcdefghijklmnopqrstuvwxyz";
 var charsetUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var charsetNumbers = "0123456789";
 var charsetSpecial = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"; // I really don't like spaces in passwords though
+var charsetDefault = charsetLowercase + charsetUppercase + charsetNumbers + charsetSpecial; // No character sets? Try all of them
 var lenMin = 8, lenMax = 128, lenDefault = 8;
 var lastUsed;
 
@@ -40,6 +41,9 @@ function getPasswordCriteria() {
     }
     if (confirm("Include special characters?")) {
       criteria.charset += charsetSpecial;
+    }
+    if (!criteria.charset) {
+      criteria.charset = charsetDefault;
     }
     lastUsed = criteria;
   }
