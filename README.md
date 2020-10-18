@@ -6,6 +6,8 @@ Password length and character set used in generation can be customized.
 
 ## Screenshots
 
+vv ***Click This*** vv
+
 <details>
 <summary>Expand/Collapse</summary>
 
@@ -16,5 +18,7 @@ Password length and character set used in generation can be customized.
 ![Again?](https://puu.sh/GC5kA/4ae62bf9b5.png)
 
 </details>
+
+^^ ***Click this*** ^^
 
 Deployment: [Password Generator](https://ducktrshessami.github.io/customizable-password-generator)
